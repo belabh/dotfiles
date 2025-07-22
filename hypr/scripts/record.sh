@@ -15,7 +15,7 @@ if [[ $xdgvideo = "$HOME" ]]; then
   unset xdgvideo
 fi
 mkdir -p "${xdgvideo:-$HOME/Videos/Recordings}"
-cd "${xdgvideo:-$HOME/Videos/Records}" || exit
+cd "${xdgvideo:-$HOME/Videos/Recordings}" || exit
 
 if pgrep wf-recorder > /dev/null; then
     notify-send "Recording Stopped" "Stopped" -a 'Recorder' &
